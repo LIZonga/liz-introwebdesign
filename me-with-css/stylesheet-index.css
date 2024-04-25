@@ -1,0 +1,131 @@
+body {
+  background-color: aliceblue;
+  background-image: url("cute-sticker.png");
+  background-size: 125px 125px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+#container {
+  width: 85%;
+  margin: auto;
+  border-top: 1px steelblue;
+  margin-top: 30px;
+}
+
+main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  width: calc(96% / 2);
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: mediumpurple;
+}
+
+h1, h2, h3 {
+  color: darkslategray;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+.name {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.location {
+  font-style: italic;
+}
+
+p, ul, ol, td {
+  color: steelblue;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 2%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#myartportfolio {
+  font-size: 0.9em;
+  text-align: center;
+  color: mediumpurple;
+}
+
+a:link, a:visited {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a.heading:link, a.heading:visited {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a.heading:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a.heading:active {
+  text-decoration: none;
+}
+
+a.myportfolio:link, a.myportfolio:visited {
+  color: mediumpurple;
+  text-decoration: underline;
+}
+
+a.myportfolio:hover {
+  color: thistle;
+  background: slateblue;
+}
+
+a.myportfolio:active {
+  text-decoration: none;
+}
+
+a.headerlinks:link, a.headerlinks:visited {
+  color: darkslategray;
+  text-decoration: underline;
+}
+
+a.headerlinks:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a.headerlinks:active {
+  text-decoration: underline;
+}

@@ -1,0 +1,309 @@
+@font-face {
+  font-family: LeagueSpartan;
+  src: url('LeagueSpartan-Light.woff2'), url('LeagueSpartan-Light.woff');
+}
+
+body {
+  margin: 0px;
+  background-color: #ffffff;
+  background-image: url('background.jpg');
+  background-size: 250px 300px;
+}
+
+/*Class*/
+.selected {
+  background-color: lightgray;
+}
+
+/*ID*/
+#topic {
+  margin-left: 2px;
+}
+
+/*Text and Links*/
+h1, h2, h3, p, nav {
+  font-family: LeagueSpartan, sans-serif;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightcyan;
+}
+
+a:active {
+  background-color: honeydew;
+}
+
+/*Layout*/
+
+header, nav {
+  margin-left: 1em;
+}
+
+header {
+  padding-top: 20px;
+}
+
+footer p {
+  text-align: center;
+
+}
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  margin-right: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article {
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h3 {
+  padding-top: 1em;
+}
+
+h3 > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* media queries for layout */
+
+@media (min-width: 30em) {
+  img {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 55em) {
+  h3 {
+  padding-top: 5em;
+  }
+}
+
+@media (min-width: 60em) {
+  h3 {
+  padding-top: 0em;
+  }
+
+  #introduction {
+    max-width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d e"
+      "g f"
+      "h h";
+  }
+
+  #introhead {
+    grid-area: a;
+  }
+
+  #intro {
+    grid-area: b;
+  }
+
+  #intropic {
+    grid-area: c;
+  }
+
+  #westernhero {
+    grid-area: d;
+  }
+
+  #westernheropic {
+    grid-area: e;
+  }
+
+  #smile {
+    grid-area: f;
+  }
+
+  #smilepic {
+    grid-area: g;
+  }
+
+  #purpose {
+    grid-area: h;
+  }
+
+  #manga {
+    max-width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "b d"
+      "b e";
+  }
+
+  #mangahead {
+    grid-area: a;
+  }
+  #mangadef {
+    grid-area: b;
+  }
+
+  #manga1 {
+    grid-area: c;
+  }
+
+  #manga2 {
+    grid-area: d;
+  }
+
+  #manga3 {
+    grid-area: e;
+  }
+
+  #webtoon {
+    max-width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "a a a"
+      "b c d";
+  }
+
+  #webtoonhead {
+    grid-area: a;
+  }
+
+  #webtoondef {
+    grid-area: b;
+  }
+
+  #webtoonimg1 {
+    grid-area: c;
+  }
+
+  #webtoonimg2 {
+    grid-area: d;
+  }
+
+  .book {
+    max-width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "b d";
+  }
+
+  .bookhead {
+    grid-area: a;
+  }
+
+  .bookdef {
+    grid-area: b;
+  }
+
+  .book1{
+    grid-area: c;
+  }
+
+  .book2{
+    grid-area: d;
+  }
+
+  #propose{
+    max-width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "c d e f";
+  }
+
+  #proposehead {
+    grid-area: a;
+  }
+  #proposedef {
+    grid-area: b;
+  }
+
+  #propose1{
+    grid-area: c;
+  }
+
+  #propose2{
+    grid-area: d;
+  }
+
+  #propose3{
+    grid-area: e;
+  }
+
+  #propose4{
+    grid-area: f;
+  }
+
+  #container {
+    padding-left: 150px;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #444444;
+    background-image: url('blackbackground.png');
+    background-size: 250px 300px;
+    color: white;
+  }
+
+  a:link, a:visited {
+    color: white;
+    background-color: black;
+  }
+
+  a:hover {
+    color: #444444;
+  }
+
+  a:active {
+    background-color: white;
+  }
+
+  #initials {
+    fill: white;
+  }
+}

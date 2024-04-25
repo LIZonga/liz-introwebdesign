@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+  background-color: aliceblue;
+  background-image: url("cute-sticker.png");
+  background-size: 125px 125px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+/* id */
+#container {
+  width: 85%;
+  margin: auto;
+  border-top: 1px steelblue;
+  margin-top: 30px;
+}
+
+#myartportfolio {
+  font-size: 0.9em;
+  text-align: center;
+  color: mediumpurple;
+}
+
+#foodpics {
+  display: flex;
+  width: calc(96%/2);
+  height: auto;
+}
+
+#experiences{
+  display: flex;
+  width: 80%;
+}
+
+#indexmain {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* class */
+.interestimg {
+  width: 80%;
+  height: auto;
+}
+.name {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.location {
+  font-style: italic;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.roles {
+  display: flex;
+  width: 96%;
+}
+
+article.introabout {
+  width: calc(96% / 2);
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: mediumpurple;
+}
+
+h1, h2, h3 {
+  color: darkslategray;
+  font-family: Comfortaa, sans-serif;
+  font-size: 1.3em;
+}
+
+p, ul, ol, td {
+  color: steelblue;
+  font-family: Comfortaa, serif;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 2%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a:link, a:visited {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a.heading:link, a.heading:visited {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a.heading:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a.heading:active {
+  text-decoration: none;
+}
+
+a.myportfolio:link, a.myportfolio:visited {
+  color: mediumpurple;
+  text-decoration: underline;
+}
+
+a.myportfolio:hover {
+  color: thistle;
+  background: slateblue;
+}
+
+a.myportfolio:active {
+  text-decoration: none;
+}
+
+a.headerlinks:link, a.headerlinks:visited {
+  color: darkslategray;
+  text-decoration: underline;
+}
+
+a.headerlinks:hover {
+  color: skyblue;
+  background: steelblue;
+}
+
+a.headerlinks:active {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 2.8em;
+}
+
+td {
+  padding: 8px;
+}
+
+.even {
+  background-color: lightgray;
+}
+
+.odd {
+  background-color: white;
+}

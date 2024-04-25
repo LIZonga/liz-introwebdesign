@@ -1,0 +1,25 @@
+body {
+  background-image: url('donutbackground.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  position: fixed;
+  width: 500px;
+  height: auto;
+  center: 0;
+  bottom: 0;
+}
+
+h1 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-style: italic;
+  text-align: center ;
+}
+
+h1 span {
+  background-color: tomato;
+}

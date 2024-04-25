@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: darkorange;
+      }
+
+      body {
+        background-color:bisque;
+        background-size: 125px 125px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        color: saddlebrown;
+        font-family: "monaco", monospace;
+      }
+
+      ul {
+        color: peru;
+      }
+
+      svg {
+        width: 550px;
+        height: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+
+      rect:hover {fill: brown;}
+      rect:active {fill: olive;}
+
+      circle:hover {fill: pink;}
+      circle:active {fill: gold;}
+
+      polygon:hover {fill: green;}
+      polygon:active {fill: teal;}
+    </style>
+
+    <meta charset="utf-8">
+    <title>Elizabeth Tang</title>
+  </head>
+
+  <body style="padding: 10px;">
+    <h1>Introduction to Web Design</h1>
+    <div style="display: flex; flex: 1;">
+
+      <p style="width: 50%; margin-right: 20px">Hello! I am a current Sophomore at NYU CAS studying Economics on the Policy track with a double minor in Chinese Language and Web Programming. I really enjoy traveling and making art. I hope you like my website!</p>
+
+      <ul style="margin-left: 20px">
+        <li><a href="me/">HTML</a></li>
+        <li><a href="me-with-css/">CSS</a></li>
+        <li><a href="images/">Raster Graphics</a></li>
+        <li><a href="https://i6.cims.nyu.edu/~eyt8724/">Vector Graphics</a></li>
+        <li><a href="my-reading-hobby/">Page Layout</a></li>
+        <li><a href="my-reading-hobby-with-responsive-design/">Responsive Design</a></li>
+        <li><a href="my-reading-hobby-with-js/">JavaScript</a></li>
+        <li>Final Project</li>
+      </ul>
+    </div>
+    <svg viewBox="0 0 550 300">
+      <title>SVG flower with gradient colors and initials</title>
+
+       <defs>
+        <linearGradient id="gradientstem">
+          <stop offset="0%" stop-color="brown" />
+          <stop offset="100%" stop-color="olive" />
+        </linearGradient>
+
+        <linearGradient id="gradientpetals">
+          <stop offset="0%" stop-color="pink" />
+          <stop offset="100%" stop-color="red" />
+        </linearGradient>
+
+        <linearGradient id="gradientcenter">
+          <stop offset="0%" stop-color="gold" />
+          <stop offset="100%" stop-color="orange" />
+        </linearGradient>
+
+         <linearGradient id="gradientleaves">
+          <stop offset="0%" stop-color="green" />
+          <stop offset="100%" stop-color="grass" />
+        </linearGradient>
+      </defs>
+
+      <g id="flower">
+        <a href="https://www.nyu.edu">
+          <rect x="95" y="100" width="10" height="60" fill="url(#gradientstem)" opacity="0.8"/>
+        </a>
+
+        <circle cx="100" cy="50" r="20" fill="url(#gradientpetals)" opacity="0.8"/>
+        <circle cx="80" cy="70" r="20" fill="url(#gradientpetals)" opacity="0.8"/>
+        <circle cx="100" cy="90" r="20" fill="url(#gradientpetals)" opacity="0.8"/>
+        <circle cx="120" cy="70" r="20" fill="url(#gradientpetals)" opacity="0.8"/>
+        
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <circle cx="100" cy="70" r="10" fill="url(#gradientcenter)" opacity="0.8"/>
+        </a>
+
+        <polygon points="90,150 70,120 80,120" fill="url(#gradientleaves)"/>
+        <polygon points="110,150 130,120 120,120" fill="url(#gradientleaves)"/>
+        
+        <line x1="100" y1="160" x2="100" y2="120" stroke="grass" stroke-width="2"/>
+        <line x1="95" y1="160" x2="95" y2="120" stroke="grass" stroke-width="2"/>
+        <line x1="105" y1="160" x2="105" y2="120" stroke="grass" stroke-width="2"/>
+      </g>
+      <text x="85" y="185" fill="darkorange" font-family="Serif; monospace" font-size="30">ET</text>
+    </svg>
+  </body>
+</html>
